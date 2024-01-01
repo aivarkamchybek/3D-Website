@@ -26,8 +26,30 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import python from './python.svg'
+import solidity from './solidity.svg'
+import java from './java.svg'
+import swift from './swift.svg'
+import docker from './docker.svg'
+import php from './php.svg'
+import mysql from './mysql.svg'
+import django from './django.svg'
+import kotlin from './kotlin.svg'
+import flask from './flask.svg'
+
+
 
 export {
+    flask,
+    kotlin,
+    django,
+    mysql,
+    php,
+    docker,
+    swift,
+    java,
+    solidity,
+    python,
     css,
     express,
     git,

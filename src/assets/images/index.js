@@ -11,5 +11,5 @@ export {
     shopify,
     starbucks,
     tesla,
-    logo
+    logo,
 }
