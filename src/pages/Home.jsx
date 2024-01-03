@@ -1,16 +1,32 @@
 import { Canvas } from '@react-three/fiber';
-import {useState, Suspense } from 'react';
+import {useState, Suspense, useEffect, useRef } from 'react';
 import Loader from '../components/Loader';
 import Island from '../models/Island';
 import Sky from '../models/Sky';
 import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
+import wind from '../assets/wind.wav';
+import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
+  const audioRef = useRef(new Audio(wind));
+  audioRef.current.volume = 0.4;
+  audioRef.current.loop = true;
 
   const [isRotating, setIsRotating] = useState(false)
-  const [currentStage, setCurrentStage] = useState(0)
+  const [currentStage, setCurrentStage] = useState(1)
+  const [isPlayingMusic, setIsPlayingMusic] = useState(true)
+
+  useEffect(() => {
+    if(isPlayingMusic && isRotating) {
+      audioRef.current.play();
+    } 
+    return () => {
+      audioRef.current.pause();
+    }
+
+  }, [isPlayingMusic, isRotating])
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -34,7 +50,7 @@ const Home = () => {
         screenScale = [1.5, 1.5, 1.5];
         screenPosition = [0, -1.5, 0];
     } else {
-        screenScale = [1, 1, 1];
+        screenScale = [3, 3, 3];
         screenPosition = [0, -4, -4];
     }
 
@@ -42,6 +58,7 @@ const Home = () => {
        }
    const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
    const [planeScale, planePosition] = adjustPlaneForScreenSize();
+   
 
   return (
     <section className='w-full h-screen relative'>
@@ -70,8 +87,8 @@ const Home = () => {
           />
           <Plane 
           isRotating={isRotating}
-          planeScale={planeScale}
-          planePosition={planePosition}
+          scale={planeScale}
+          position={planePosition}
           rotation={[0, 20, 0]}
           
           />
@@ -82,6 +99,14 @@ const Home = () => {
 
         </Suspense>
       </Canvas>
+      <div className='absolute bottom-2 left-2'>
+        <img
+        src={!isPlayingMusic ? soundoff : soundon}
+        alt="sound"
+        className='w-10 h-10 cursor-pointer object-contain'
+        onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+        />
+      </div>
 
     </section>
   )

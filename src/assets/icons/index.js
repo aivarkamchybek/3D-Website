@@ -36,7 +36,9 @@ import mysql from './mysql.svg'
 import django from './django.svg'
 import kotlin from './kotlin.svg'
 import flask from './flask.svg'
-
+import movie from './movie.svg'
+import portfolio from './portfolio.svg'
+import home from './home.svg'
 
 
 export {
@@ -77,5 +79,8 @@ export {
     arrow,
     contact,
     soundon,
+    movie,
+    portfolio,
+    home,
     soundoff
 }
