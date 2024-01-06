@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla, parts4cells, zoominn } from "../assets/images";
+import { meta, shopify, starbucks, tesla, parts4cells, leoparts } from "../assets/images";
 import {
     python,
     car,
@@ -35,6 +35,7 @@ import {
     movie,
     portfolio,
     home,
+    
 
 } from "../assets/icons";
 
@@ -153,24 +154,24 @@ export const experiences = [
         company_name: "Parts4Cells",
         icon: parts4cells,
         iconBg: "#accbe1",
-        date: "May 2022 - August 2022",
+        date: "May 2023 - August 2023",
         points: [
-            "Enhanced operational efficiency by implementing a PHP-based automated label generation system for LCD buyback requests, reducing processing time by 40% and leading to a 15% reduction in associated costs.",
-            "Collaborated with the development team to boost Magento e-commerce website performance, implementing advanced HTML and CSS techniques for a 20% faster load time and 15% increased user engagement ",
-            "Optimized and seamlessly implemented a store credit and refund system, resulting in a remarkable increase in revenue within a  span of just two months",
-            "Collaborated in cross-functional teams to enhance problem-solving capabilities, ensuring superior code quality and performance optimization, ultimately contributing to increase in website efficiency",
+            "Developed and implemented a new website section dedicated to device interaction using PHP and JavaScript",
+            "Collaborated with the development team to enhance the Magento e-commerce website, employing advanced HTML, CSS, and JavaScript techniques",
+            "Achieved a 20% faster load time and a 15% increase in user engagement",
+            "Utilized PHP to optimize server-side functionalities, enhancing data processing efficiency and ensuring seamless communication with the website.",
         ],
     },
     {
-        title: "Blockchain Developer Intern",
-        company_name: "Zoominn",
-        icon: zoominn,
+        title: "Software Engineer Intern",
+        company_name: "LeoParts",
+        icon: leoparts,
         iconBg: "#c3bcfb",
-        date: "Jan 2021 - Feb 2022",
+        date: "May 2022 - August 2022",
         points: [
-            "Efficiently deployed a customized token (ZONN) on the Binance Smart Chain by leveraging Solidity and blockchain development tools",
-            "Architected and implemented robust, efficient, and scalable smart contracts for token issuance, distribution, and trading on decentralized exchanges (DEXs)",
-            "Managed liquidity pool and wallet operations for the token, ensuring accessibility and sufficient liquidity for users",
+            "Enhanced operational efficiency by implementing a PHP-based automated label generation system for LCD buyback requests, reducing processing time by 40% and leading to a 15% reduction in associated costs",
+            "Optimized and seamlessly implemented a store credit and refund system using PHP, resulting in a remarkable increase in revenue within a span of just two months",
+            "Collaborated in cross-functional teams to enhance problem-solving capabilities, ensuring superior code quality and performance optimization, ultimately contributing to increase in website efficiency",
   
         ],
     },

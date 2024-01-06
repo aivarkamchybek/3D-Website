@@ -5,7 +5,7 @@ import starbucks from './starbucks.png'
 import tesla from './tesla.png'
 import logo from './logo.svg'
 import parts4cells from './parts4cells.png'
-import zoominn from './zoominn.png'
+import leoparts from './leoparts.jpg'
 
 export {
     hero,
@@ -15,5 +15,5 @@ export {
     tesla,
     logo,
     parts4cells,
-    zoominn
+    leoparts
 }
