@@ -13,7 +13,6 @@ This project is a modern and visually appealing 3D developer portfolio created u
 - **Timeline Component:** Utilize the React Vertical Timeline Component to showcase your professional journey.
 
 ## Dependencies
-- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): For email integration.
 - [@react-spring/three](https://www.npmjs.com/package/@react-spring/three): React bindings for spring-based animations in Three.js.
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): A collection of useful helpers and abstractions for react-three-fiber.
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): A React renderer for Three.js.
