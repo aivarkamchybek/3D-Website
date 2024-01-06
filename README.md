@@ -27,9 +27,3 @@ This project is a modern and visually appealing 3D developer portfolio created u
 3. Install dependencies: `npm install`
 4. Run the development server: `npm run dev`
 
-## Usage
-- Customize the content in the `src` directory to showcase your projects, skills, and experiences.
-- Add your own 3D models and assets to the `public` directory.
-- Tailor the styles and layout by modifying the `src/styles` directory.
-- Update the `public/index.html` file to set your own page title, meta tags, etc.
-
